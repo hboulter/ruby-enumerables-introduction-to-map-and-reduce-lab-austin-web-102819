@@ -19,9 +19,11 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  source_array.reduce { |sum, n| n  }
+  source_array.reduce { |sum, n| n }
 end
 
 def reduce_to_any_true(source_array)
   source_array.reduce { |sum, n| n || sum }
 end
+
+# TODO: why n || sum works but sum || n does not?
